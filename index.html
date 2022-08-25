@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>K3 Petter</title>
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body id="body">
+    <main>
+      <form id="form" autocomplete="off" onSubmit="return false">
+        <label for="user-name">Name</label>
+        <input type="text" id="user-name" />
+        <button type="submit" id="connect-but">Add user</button><br />
+        <div id="panel" style="visibility: hidden;">
+        <div id="container2">
+          <div id="mess-board2"></div>
+
+          <div id="room-board2">Rooms<span id="current-room"></span></div>
+
+          <div id="userlist2">Users</div>
+        </div>
+        <div id="container">
+          <div id="mess-board"></div>
+
+          <div id="room-board"></div>
+
+          <div id="userlist"></div>
+        </div>
+
+       
+          <label for="mess-in">Message</label>
+          <input type="text" id="mess-in" />
+          <button type="submit" id="mess-but">Send</button>
+          <div id="emoji-board"></div>
+          <label for="room-in"></label>
+          <input type="hidden" id="room-in" />
+          <input type="hidden" id="room-id" />
+          <input type="hidden" id="new-room" /><input
+            type="hidden"
+            id="new-room-id"
+          />
+          <div style="text-align: left; display: block;">
+  
+          <button id="create-room-but">Create new room</button>
+          <br><input type="checkbox" id="passCheck" style="width: 20px; position: relative; top: 4px;">Password Protect
+          
+          </div>
+          <input type="hidden" id="password" value="Choose password">
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
